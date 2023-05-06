@@ -1,0 +1,86 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    outline: none;
+}
+
+body {
+    background: url("./imagens/foshi.jpg") ;
+    background-size:cover;
+    padding-top: 160px;
+}
+
+.container {
+    background-color:darkgrey;
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 100px auto auto;
+}
+
+.input-task {
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px; 
+    padding-left: 10px;   
+    font-size: 18px;
+}
+
+.button-task:hover {
+    opacity: 0.8 ;
+}
+
+.button-task:active {
+    opacity: 0.6;
+}
+
+.button-task {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color:green;
+    color: #ffff;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.list-task {
+    width: 100%;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.task {
+    background-color: azure;
+    box-shadow: 1px 4px 10px rgba(0,0, 0, .2);
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+img {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img {
+    opacity: 1;
+}
+
+
+.done {
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
